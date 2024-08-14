@@ -25,7 +25,7 @@ interface CompanyProfileProps {
 const CompanyProfile: React.FC<CompanyProfileProps> = (props) => {
   return (
     <div className="bg-gray-900 bg-opacity-90 p-8 rounded-lg shadow-lg">
-      <h1 className="text-3xl font-extrabold mb-4">{props.companyType === 'corporate' ? props.companyName : `${props.firstName} ${props.lastName}`}</h1>
+      <h1 className="text-3xl font-extrabold mb-4">{props.companyName}</h1>
       <p className="text-gray-400 mb-2">{props.industry}</p>
       <p className="text-gray-500 mb-2">{props.email}</p>
       <p className="text-gray-500 mb-2">{props.phoneNumber}</p>
